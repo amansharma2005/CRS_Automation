@@ -1,0 +1,21 @@
+# Environments & Secrets
+.env
+.env.*
+*.json
+!package.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Binaries & Large Files
+poppler.zip
+poppler_extracted/
+test_*.py
+test_fms.py
+try_ids.py
+brute_force_ids.py
