@@ -1,7 +1,9 @@
 # AI Document Processing System
 
-> **Autonomous OCR + LLM extraction for industrial blower test certificates**  
-> Extracts 18 structured fields from PDFs, images, or raw OCR text with self-correction.
+![Project UI](show_image.png)
+
+## 📝 Project Description
+This AI-powered Test Certificate Extraction platform automates the ingestion, parsing, and logging of engineering certificates. Users can upload PDFs, paste text, share Google Drive links, or search directly using a certificate's CRS Number. For CRS searches, the system queries a master database to locate and download the correct PDF from Google Drive. It then processes the document using PyMuPDF and utilizes OpenAI's `gpt-4o-mini` to extract 18 technical parameters (including blower model, capacity, pressure, motor speeds, and flow direction) with 100% accuracy. Extracted data is automatically exported to a destination Google Sheet in the background to ensure a fast UI response. An API caching system and socket connection timeouts are implemented to optimize performance and prevent network bottlenecks.
 
 ---
 
